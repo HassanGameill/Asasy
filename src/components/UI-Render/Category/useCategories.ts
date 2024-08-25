@@ -1,11 +1,11 @@
 "use client"
 
 import { useEffect } from "react";
-import { useAppDispatch, useAppSelector } from "@/Redux/hooks";
+import { useAppDispatch, useAppSelector } from "../../../Redux/hooks";
 import {
   actGetCategories,
   categoriesRecordsCleanUp,
-} from "@/Redux/features/categories/categoriesSlice";
+} from "../../../Redux/features/categories/categoriesSlice";
 
 const useCategories = () => {
   const dispatch = useAppDispatch();

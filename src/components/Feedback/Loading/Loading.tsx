@@ -3,7 +3,7 @@ import ProductSkeleton from "../skeletons/ProductSkeleton/ProductSkeleton";
 import CartSkeleton from "../skeletons/CartSkeleton/CartSkeleton";
 import {LottieHandler} from "../LottiHandler/LottiHandler";
 
-import { TLoading } from "@/types";
+import { TLoading } from "../../../types";
 
 const skeletonsTypes = {
   category: CategorySkeleton,

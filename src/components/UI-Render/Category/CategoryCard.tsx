@@ -1,4 +1,4 @@
-import { TCategory } from "@/types";
+import { TCategory } from "../../../types";
 import Link from "next/link";
 import Image from "next/image";
 import { useLocale } from "next-intl";

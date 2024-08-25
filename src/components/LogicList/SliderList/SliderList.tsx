@@ -5,7 +5,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { LottieHandler } from '@/Components/Feedback/LottiHandler/LottiHandler';
+import { LottieHandler } from '../../Feedback/LottiHandler/LottiHandler';
 
 type SliderListProps<T> = {
   records?: T[];
