@@ -2,15 +2,35 @@ import React from "react";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Link from "next/link";
 import { HiOutlinePhone } from "react-icons/hi2";
+import LocaleSwitcher from "../../LocalSwitcher/local-switcher";
+import ThemeToggler from "./ThemeToggler";
+import { CiLogin } from "react-icons/ci";
+
 
 function FirstHeaer() {
   return (
-    <div className="bg-slate-800 ] pb-4 pt-2 flex flex-col items-center justify-center">
-      <div className="container flex items-center justify-between">
-        <div className="">
+    <div className="bg-slate-800  pb-2 pt-2 flex flex-col items-center justify-center">
+      <div className="container ">
+
+        <div className="flex items-center justify-between">
+
+        <div className="LOGIN flex items-center gap-2 text-white hover:text-green-400 cursor-pointer">
+          <span className="text-[14px]">Login</span>
+          <span className="text-[18px]">
+            <CiLogin />
+          </span>
+        </div>
+        
+
+
+
+        <div className="xss:hidden md:block">
           <SocialLinks />
         </div>
-        <div className="">
+
+
+
+        <div className="flex items-center gap-6">
           <Link
             className="flex items-center gap-1 text-white"
             href={"/"}
@@ -20,9 +40,18 @@ function FirstHeaer() {
               <HiOutlinePhone />
               <span className="">+201070095665</span>
             </span>
-            <span className="">HOTLINE</span>
+            <span className="text-[14px] md:text[16px] lg:text-[17px]">HOTLINE</span>
           </Link>
+
+          <div className="flex items-center gp-3">
+          <ThemeToggler />
+          <LocaleSwitcher />
+          </div>
+
+          
         </div>
+      </div>
+
       </div>
     </div>
   );
