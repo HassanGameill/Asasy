@@ -14,7 +14,6 @@ import heroData from "./heroData";
 import Lottie from "lottie-react";
 import { Dialog } from "@headlessui/react";
 import { HiXMark } from "react-icons/hi2";
-import ContactPopup from "@/components/Common/Dialog-PopUp/Contact-Popup/ContactPopup";
 
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
