@@ -64,7 +64,7 @@ const Footer = () => {
                     src={theme === "dark" ? darklogo : lightLogo}
                     alt="logo"
                     className="w-full "
-                    width={140}
+                    width={50}
                     height={30}
                   />
                   

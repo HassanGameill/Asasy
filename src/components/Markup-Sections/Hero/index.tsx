@@ -11,9 +11,7 @@ import DealImg from "../../../../public/images/bannar/b4.jpeg";
 import { HiOutlinePhone } from "react-icons/hi2";
 import { useLocale, useTranslations } from "next-intl";
 import heroData from "./heroData";
-import Lottie from "lottie-react";
-import { Dialog } from "@headlessui/react";
-import { HiXMark } from "react-icons/hi2";
+
 
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);

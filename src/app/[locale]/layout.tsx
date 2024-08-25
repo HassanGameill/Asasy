@@ -23,7 +23,7 @@ export default function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FEFAE0] dark:bg-black ${inter.className}`}>
         <ClientWrapper locale={locale} dir={dir}>
           {children}
         </ClientWrapper>

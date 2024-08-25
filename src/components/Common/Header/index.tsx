@@ -11,6 +11,7 @@ import darklogo from "../../../../public/images/Logos/Asasy_logo1.png";
 import { useTranslations } from "next-intl";
 import LocalSwitcher from "../../LocalSwitcher/local-switcher";
 import { useLocale } from "next-intl";
+import FirstHeaer from "./FirstHeaer";
 
 const Header = () => {
   // Navbar toggle
@@ -58,11 +59,12 @@ const Header = () => {
 
   return (
     <>
+    <FirstHeaer />
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center  ${
           sticky
             ? "dark:bg-gray-dark dark:shadow-sticky-dark fixed z-[9999] bg-white !bg-opacity-80 shadow-sticky backdrop-blur-sm transition"
-            : "absolute bg-transparent shadow-sm dark:shadow-md"
+            : "absolute bg-transparent shadow-sm dark:shadow-md mt-8"
         }`}
       >
         <div className="container">
