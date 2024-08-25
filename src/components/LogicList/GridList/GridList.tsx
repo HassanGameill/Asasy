@@ -1,4 +1,4 @@
-import { LottieHandler } from "@/Components/Feedback/LottiHandler/LottiHandler";
+import { LottieHandler } from "../../Feedback/LottiHandler/LottiHandler";
 
 type GridListProps<T> = {
   records: T[];

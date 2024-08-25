@@ -2,7 +2,7 @@
 
 import { createSlice } from "@reduxjs/toolkit";
 import actGetProductsByCatPrefix from "./act/actGetProductsPrefix";
-import { TProduct, TLoading, isString } from "../../../types";
+import { TProduct, TLoading, isString } from "../../../types/index";
 
 
 interface ICategoriesState {
