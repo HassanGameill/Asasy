@@ -29,7 +29,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
         <div className="flex min-h-full items-center justify-center p-4">
           {/* The actual dialog panel  */}
           <Dialog.Panel className="mx-auto max-w-sm rounded bg-white dark:bg-[#1A1F2B]">
-            <div className="bg-white dark:bg-[#1A1F2B] pt-2 mx-4 flex justify-end">
+            <div className="bg-white dark:bg-[#1A1F2B] pt-2 mx-4 pb-3 flex justify-end">
               <span
                 className="text-center cursor-pointer rounded-lg w-[30px] h-[30px] hover:text-red-600"
                 onClick={onClose}
@@ -67,7 +67,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                       Price: ${data.price.toFixed(2)}
                     </span>
 
-                    <div className="BUTTON bg-green-400 px-4 py-3 rounded-xl hover:text-white">
+                    <div className="BUTTON bg-green-400 px-4 py-3 rounded-xl hover:text-white cursor-pointer">
                       <button className="flex items-center gap-2">
                         <span className="text-[18px]">
                           <CiShoppingCart />

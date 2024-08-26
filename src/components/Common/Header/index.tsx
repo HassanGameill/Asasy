@@ -1,23 +1,19 @@
 "use client";
 import Image from "next/image";
 import Link from "next/link";
-import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import ThemeToggler from "./ThemeToggler";
-import menuData from "./menuData";
+
 import lightLogo from "../../../../public/images/Logos/Asasy_logo1.png";
 import darklogo from "../../../../public/images/Logos/Asasy_logo1.png";
-import { useTranslations } from "next-intl";
-import LocalSwitcher from "../../LocalSwitcher/local-switcher";
-import { useLocale } from "next-intl";
+
 import FirstHeaer from "./FirstHeaer";
-import { CiShoppingCart } from "react-icons/ci";
-import { FaRegHeart } from "react-icons/fa";
+
 import BasketCart from "@/components/Ecommerce/BasketCart/BasketCart";
 import style from './style.module.css'
+import Wishlist from "@/components/Ecommerce/Wishlist/Wishlist";
 
-const {cart_badge} = style;
+const {cart_badge, wishlist_badge} = style;
 
 
 
@@ -88,7 +84,7 @@ const Header = () => {
                 <BasketCart cart_badge={cart_badge} />
                 </span>
                 <span className="text-[20px] cursor-pointer hover:text-red-600">
-                <FaRegHeart />
+                <Wishlist cart_badge={wishlist_badge} />
                 </span>
                 
                 
