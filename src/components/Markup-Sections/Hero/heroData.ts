@@ -1,11 +1,11 @@
 
 
 type THeroData = {
-  id: number;
-  title: string;
-  description: string;
-  btnTitle1: string;
-  btnTitle2: string;
+  id?: number;
+  title?: string;
+  description?: string;
+  btnTitle1?: string;
+  btnTitle2?: string;
   
 };
 
