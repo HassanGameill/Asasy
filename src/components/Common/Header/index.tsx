@@ -5,21 +5,17 @@ import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
 import lightLogo from "../../../../public/images/Logos/Asasy_logo1.png";
-import darklogo from "../../../../public/images/Logos/Asasy_logo1.png";
+import darklogo from "../../../../public/images/Logos/dark-logo.png";
 
 import FirstHeaer from "./FirstHeaer";
 
 import BasketCart from "@/components/Ecommerce/BasketCart/BasketCart";
-import style from './style.module.css'
+import style from "./style.module.css";
 import Wishlist from "@/components/Ecommerce/Wishlist/Wishlist";
 
-const {cart_badge, wishlist_badge} = style;
-
-
-
+const { cart_badge, wishlist_badge } = style;
 
 const Header = () => {
-  
   // Sticky Navbar
   const [sticky, setSticky] = useState(false);
   useEffect(() => {
@@ -56,9 +52,7 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          
           <div className="flex items-center justify-between">
-
             <div className="w-[100px] max-w-full px-4 xl:mr-12">
               <Link
                 href="/"
@@ -76,23 +70,15 @@ const Header = () => {
               </Link>
             </div>
 
-            
-
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4 ">
                 <span className="text-[32px] cursor-pointer hover:text-green-400">
-                <BasketCart cart_badge={cart_badge} />
+                  <BasketCart cart_badge={cart_badge} />
                 </span>
                 <span className="text-[20px] cursor-pointer hover:text-red-600">
-                <Wishlist cart_badge={wishlist_badge} />
+                  <Wishlist cart_badge={wishlist_badge} />
                 </span>
-                
-                
-               
-                
               </div>
-
-              
             </div>
           </div>
         </div>

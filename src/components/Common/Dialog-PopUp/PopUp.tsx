@@ -57,7 +57,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                       {data.title}
                     </h3>
 
-                    <h4 className="text-lightblack text-sm font-normal opacity-50 ">
+                    <h4 className="text-lightblack text-[13px] font-normal opacity-50 ">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aperiam voluptatem enim eaque neque laborum.
                     </h4>
                   </div>
@@ -67,7 +67,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
                       Price: ${data.price.toFixed(2)}
                     </span>
 
-                    <div className="BUTTON bg-green-400 px-4 py-3 rounded-xl hover:text-white cursor-pointer">
+                    <div className="BUTTON bg-green-400 px-4 py-2 rounded-xl hover:text-white cursor-pointer">
                       <button className="flex items-center gap-2">
                         <span className="text-[18px]">
                           <CiShoppingCart />

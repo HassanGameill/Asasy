@@ -6,7 +6,7 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
 import lightLogo from '../../../../public/images/Logos/Asasy_logo1.png';
-import darklogo from '../../../../public/images/Logos/Asasy_logo1.png';
+import darklogo from '../../../../public/images/Logos/dark-logo.png';
 import SocialLinks from "../SocialLinks/SocialLinks";
 
 
@@ -59,13 +59,13 @@ const Footer = () => {
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
               <div className="mb-12 max-w-[360px] lg:mb-16">
-                <Link href="/" className="mb-8 inline-block">
+                <Link href="/" className="mb-8 inline-block w-[80px]">
                   <Image
                     src={theme === "dark" ? darklogo : lightLogo}
                     alt="logo"
                     className="w-full "
-                    width={50}
-                    height={30}
+                    width={0}
+                    height={0}
                   />
                   
                 </Link>

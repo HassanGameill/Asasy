@@ -3,17 +3,20 @@ import { Metadata } from "next";
 
 
 
+
 import Hero from "@/components/Markup-Sections/Hero";
 
 
 
 import CategoryRender from "@/components/UI-Render/Category/CategoryRender";
+import PakegesRender from "@/components/Markup-Sections/Pakeges/PakegesRender";
+import Pakege from "@/components/Markup-Sections/Pakeges";
 
 export const metadata: Metadata = {
-  title: "Markup",
-  description: "marketing and business solutions",
+  title: "Asasy",
+  description: "asasy supermarket family pakge ",
   icons: {
-    icon: "/icons/icon-markup.png",
+    icon: "../../../public/images/Logos/Asasy_logo1.png",
   },
   // other metadata
 };
@@ -22,7 +25,9 @@ export default function Home() {
   return (
     <>
     <Hero />
+    <Pakege />
     <CategoryRender />
+    
 
       {/* 
       <OurPartners />
