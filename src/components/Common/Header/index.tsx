@@ -14,6 +14,11 @@ import { useLocale } from "next-intl";
 import FirstHeaer from "./FirstHeaer";
 import { CiShoppingCart } from "react-icons/ci";
 import { FaRegHeart } from "react-icons/fa";
+import BasketCart from "@/components/Ecommerce/BasketCart/BasketCart";
+import style from './style.module.css'
+
+const {cart_badge} = style;
+
 
 
 
@@ -80,7 +85,7 @@ const Header = () => {
             <div className="flex items-center justify-between">
               <div className="flex items-center gap-4 ">
                 <span className="text-[32px] cursor-pointer hover:text-green-400">
-                <CiShoppingCart />
+                <BasketCart cart_badge={cart_badge} />
                 </span>
                 <span className="text-[20px] cursor-pointer hover:text-red-600">
                 <FaRegHeart />

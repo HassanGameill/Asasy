@@ -9,29 +9,36 @@ import Img06 from "../../../../public/images/bannar/b6.jpeg";
 
 // IMAGES DATA FOR CAROUSEL
 interface Data {
+  id?: number;
   imgSrc: any;
 }
 
 const BannerData: Data[] = [
   {
+    id: 1,
     imgSrc: Img01,
   },
   {
+    id: 2,
     imgSrc: Img02,
   },
 
   {
+    id: 3,
     imgSrc: Img03,
   },
   {
+    id: 4,
     imgSrc: Img04,
   },
   
   {
+    id: 5,
     imgSrc: Img05,
   },
 
   {
+    id: 6,
     imgSrc: Img06,
   },
   
