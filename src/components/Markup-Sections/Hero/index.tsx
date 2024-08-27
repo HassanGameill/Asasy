@@ -56,7 +56,7 @@ const Hero = () => {
                             }`}
                           >
                             {item.title}{" "}
-                            <span className="text-orange-400">
+                            <span className="text-green-400">
                               <Typewriter
                                 words={
                                   local === "ar"

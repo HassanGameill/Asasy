@@ -7,11 +7,12 @@ import { useTheme } from "next-themes";
 import lightLogo from "../../../../public/images/Logos/Asasy_logo1.png";
 import darklogo from "../../../../public/images/Logos/dark-logo.png";
 
-import FirstHeaer from "./FirstHeaer";
-
 import BasketCart from "@/components/Ecommerce/BasketCart/BasketCart";
-import style from "./style.module.css";
 import Wishlist from "@/components/Ecommerce/Wishlist/Wishlist";
+
+import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
+
+import style from "./style.module.css";
 
 const { cart_badge, wishlist_badge } = style;
 
@@ -36,14 +37,13 @@ const Header = () => {
   const { theme } = useTheme();
 
   // Search bar state
-  const [searchOpen, setSearchOpen] = useState(false);
-  const toggleSearch = () => {
-    setSearchOpen(!searchOpen);
+  const [openSearch, setOpenSearch] = useState(false);
+  const handleOpenSearch = () => {
+    setOpenSearch(!openSearch);
   };
 
   return (
     <>
-      <FirstHeaer />
       <header
         className={`header left-0 top-0 z-40 flex w-full items-center ${
           sticky
@@ -52,8 +52,11 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className="flex items-center justify-between">
-            <div className="w-[100px] max-w-full px-4 xl:mr-12">
+          <div className="flex items-center  justify-between">
+
+            <div
+              className={`w-[100px] max-w-full px-4 xl:mr-12 ${openSearch ? " " : ""}`}
+            >
               <Link
                 href="/"
                 className={`header-logo block w-full ${
@@ -70,8 +73,33 @@ const Header = () => {
               </Link>
             </div>
 
-            <div className="flex items-center justify-between">
-              <div className="flex items-center gap-4 ">
+{/*             
+
+            <div className={`fixed  lg:sticky w-full h-full  bg-white/80 rounded-lg ${sticky ? "" : "top-[155px] lg:top-0"} `}>
+              <div className="flex xss:flex-col lg:flex-row  items-center gap-5 ">
+              <Link href="/">Home</Link>
+                  <Link href="/packages">Packages</Link>
+                  <Link href="/products">Products</Link>
+                  <Link href="/about">About</Link>
+              </div>
+            </div>
+
+             */}
+
+            <div className="flex items-center gap-4 ">
+            <div
+              className={`search-box w-full cursor-pointer  flex items-center  shadow-md px-2 xss:rounded-lg ${openSearch ? " bg-[#2c2b2b] dark:bg-white px-3  " : "  justify-center  bg-white hover:bg-gray-50  "}    `}
+            >
+              <input
+                className={`${openSearch ? "w-full py-2 px-3" : "w-0 "}`}
+                type="text"
+                placeholder="Search By..."
+              />
+              <span className={`px-[3px] py-2 ${openSearch ? " text-white dark:text-[#222] " : "   text-[#2c2b2b]  "}`} onClick={handleOpenSearch}>
+                <HiOutlineMagnifyingGlass />
+              </span>
+            </div>
+              <div className="flex items-center gap-4">
                 <span className="text-[32px] cursor-pointer hover:text-green-400">
                   <BasketCart cart_badge={cart_badge} />
                 </span>
@@ -80,6 +108,8 @@ const Header = () => {
                 </span>
               </div>
             </div>
+
+
           </div>
         </div>
       </header>

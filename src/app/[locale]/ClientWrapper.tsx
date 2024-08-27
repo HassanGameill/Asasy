@@ -6,6 +6,7 @@ import ScrollToTop from "@/components/Common/ScrollToTop";
 import { Providers } from "./providers";
 import { ProvidersTheme } from "./ThemeProvider";
 import StoreProvider from "./storeProvider";
+import HeaderRender from "@/components/Common/Header/HeaderRender";
 
 interface ClientWrapperProps {
   children: React.ReactNode;
@@ -20,7 +21,7 @@ export default function ClientWrapper({ children, locale, dir }: ClientWrapperPr
     <StoreProvider>
     <ProvidersTheme>
       <Providers locale={locale}>
-        <Header />
+        <HeaderRender />
         <div className="" dir={dir}>
 
         {children}

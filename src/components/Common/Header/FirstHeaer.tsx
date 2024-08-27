@@ -15,8 +15,8 @@ function FirstHeaer() {
         <div className="flex items-center justify-between">
 
         <div className="LOGIN flex items-center gap-2 text-white hover:text-green-400 cursor-pointer">
-          <span className="text-[14px]">Login</span>
-          <span className="text-[18px]">
+          <span className="text-[11px] sm:text-[14px] md:text-[15px] ">Login</span>
+          <span className="text-[14px] md:text-[18px]">
             <CiLogin />
           </span>
         </div>
@@ -40,7 +40,7 @@ function FirstHeaer() {
               <HiOutlinePhone />
               <span className="">+201070095665</span>
             </span>
-            <span className="text-[14px] md:text[16px] lg:text-[17px]">HOTLINE</span>
+            <span className="text-[10px] sm:text[12px] md:text[16px] lg:text-[17px]">HOTLINE</span>
           </Link>
 
           <div className="flex items-center gp-3">
