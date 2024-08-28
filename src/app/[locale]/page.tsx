@@ -8,8 +8,6 @@ import Hero from "@/components/Markup-Sections/Hero";
 
 
 
-import CategoryRender from "@/components/UI-Render/Category/CategoryRender";
-import PakegesRender from "@/components/Markup-Sections/Pakeges/PakegesRender";
 import Pakege from "@/components/Markup-Sections/Pakeges";
 
 export const metadata: Metadata = {

@@ -73,9 +73,9 @@ const Header = () => {
               </Link>
             </div>
 
-{/*             
+            
 
-            <div className={`fixed  lg:sticky w-full h-full  bg-white/80 rounded-lg ${sticky ? "" : "top-[155px] lg:top-0"} `}>
+            <div className={`lg:navigation ${sticky ? "" : "top-[155px] lg:top-0"} `}>
               <div className="flex xss:flex-col lg:flex-row  items-center gap-5 ">
               <Link href="/">Home</Link>
                   <Link href="/packages">Packages</Link>
@@ -84,7 +84,7 @@ const Header = () => {
               </div>
             </div>
 
-             */}
+            
 
             <div className="flex items-center gap-4 ">
             <div
