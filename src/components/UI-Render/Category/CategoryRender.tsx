@@ -3,7 +3,6 @@ import CategoryCard  from "./CategoryCard";
 import Loading  from "../../Feedback/Loading/Loading";
 import useCategories from "./useCategories";
 import SliderList from "../../LogicList/SliderList/SliderList";
-import NewList from "@/components/LogicList/NewList/NewList";
 
 const CategoryRender = () => {
   const { loading, error, records } = useCategories();
@@ -12,7 +11,7 @@ const CategoryRender = () => {
     <>
     <div className="container">
       <Loading status={loading} error={error} type="category">
-        <NewList
+        <SliderList
           emptyMessage="There are no categories"
           records={records}
           renderItem={(record) => <CategoryCard {...record} />}

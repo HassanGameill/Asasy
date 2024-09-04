@@ -1,10 +1,10 @@
 import React from "react";
 import SocialLinks from "../SocialLinks/SocialLinks";
-import Link from "next/link";
 import { HiOutlinePhone } from "react-icons/hi2";
 import ThemeToggler from "./ThemeToggler";
 import { CiLogin } from "react-icons/ci";
 import LocaleSwitcher from "@/LocalSwitcher/local-switcher";
+import { Link } from "@/navigation";
 
 
 function FirstHeaer() {
@@ -14,12 +14,12 @@ function FirstHeaer() {
 
         <div className="flex items-center justify-between">
 
-        <div className="LOGIN flex items-center gap-2 text-white hover:text-green-400 cursor-pointer">
+        <Link href="/blogs" className="LOGIN flex items-center gap-2 text-white hover:text-green-400 cursor-pointer">
           <span className="text-[11px] sm:text-[14px] md:text-[15px] ">Login</span>
           <span className="text-[14px] md:text-[18px]">
             <CiLogin />
           </span>
-        </div>
+        </Link>
         
 
 

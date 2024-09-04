@@ -36,8 +36,8 @@ export default function LocaleSwitcher() {
     <div className="flex items-center gap-2">
       <button
         type="button"
-        className={`text-white p-1 rounded-md text-[11px] hover:opacity-45 ${
-          currentLocale === 'en' ? 'bg-[#F6AA02] font-medium' : 'bg-blue-800'
+        className={`text-white bg-[#F6AA02] p-1 rounded-md text-[11px] hover:opacity-45 ${
+          currentLocale === "en" ? "bg-red-600" : 'bg-blue-800'
         }`}
         onClick={toggleLocale}
         aria-pressed={isPending}

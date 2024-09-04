@@ -1,7 +1,7 @@
 import Hero from "@/components/Sections/Hero";
 import Pakege from "@/components/Sections/Pakeges";
-import CategoryRender from "@/components/UI-Render/Category/CategoryRender";
 import { Metadata } from "next";
+
 
 
 export const metadata: Metadata = {
@@ -18,7 +18,6 @@ export default function Home() {
     <>
       <Hero />
       <Pakege />
-      <CategoryRender />
       
     </>
   );
