@@ -1,7 +1,7 @@
-import { useTranslations } from "next-intl";
-import { Metadata } from "next";
 import Hero from "@/components/Sections/Hero";
 import Pakege from "@/components/Sections/Pakeges";
+import CategoryRender from "@/components/UI-Render/Category/CategoryRender";
+import { Metadata } from "next";
 
 
 export const metadata: Metadata = {
@@ -16,21 +16,10 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-    <Hero />
-    <Pakege />
-    
-    
-
-      {/* 
-      <OurPartners />
-      <Baner />
-      <Features />
-      <OurTarget />
-      <NewsUs />
-      <OurServices />
-      <Temework />
-      <Testimonials />
-      <Contact /> */}
+      <Hero />
+      <Pakege />
+      <CategoryRender />
+      
     </>
   );
 }

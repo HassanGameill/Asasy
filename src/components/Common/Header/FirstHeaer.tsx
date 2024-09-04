@@ -2,9 +2,9 @@ import React from "react";
 import SocialLinks from "../SocialLinks/SocialLinks";
 import Link from "next/link";
 import { HiOutlinePhone } from "react-icons/hi2";
-import LocaleSwitcher from "../../LocalSwitcher/local-switcher";
 import ThemeToggler from "./ThemeToggler";
 import { CiLogin } from "react-icons/ci";
+import LocaleSwitcher from "@/LocalSwitcher/local-switcher";
 
 
 function FirstHeaer() {
