@@ -4,6 +4,7 @@ import SliderList from "../../LogicList/MultipleSlider/SliderList";
 import PakegeData from "./PakegesData";
 import PakegeCard from "@/components/Common/CategoriesCards/pakegeCard";
 import NewList from "@/components/LogicList/NewList/NewList";
+import NewBanner from "@/components/Common/Banners/NewBanner";
 
 function PakegesRender() {
   // translation
@@ -18,6 +19,20 @@ function PakegesRender() {
 
   return (
     <div className="">
+      <NewList
+        records={records}
+        renderItem={PakegesRender}
+        emptyMessage="There are no categories"
+      />
+
+      <NewList
+        records={records}
+        renderItem={PakegesRender}
+        emptyMessage="There are no categories"
+      />
+
+      <NewBanner />
+
       <NewList
         records={records}
         renderItem={PakegesRender}
