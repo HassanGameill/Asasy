@@ -13,6 +13,7 @@ import Wishlist from "@/components/Ecommerce/Wishlist/Wishlist";
 import { HiOutlineMagnifyingGlass } from "react-icons/hi2";
 
 import style from "./style.module.css";
+import Nav from "./Nav";
 
 const { cart_badge, wishlist_badge } = style;
 
@@ -64,7 +65,7 @@ const Header = () => {
                 }`}
               >
                 <Image
-                  src={theme === "dark" ? darklogo : lightLogo}
+                  src={ darklogo}
                   alt="logo"
                   width={140}
                   height={30}
@@ -73,17 +74,7 @@ const Header = () => {
               </Link>
             </div>
 
-            
-
-            <div className={`lg:navigation ${sticky ? "" : "top-[155px] lg:top-0"} `}>
-              <div className="flex xss:flex-col lg:flex-row  items-center gap-5 ">
-              <Link href="/">Home</Link>
-                  <Link href="/packages">Packages</Link>
-                  <Link href="/products">Products</Link>
-                  <Link href="/about">About</Link>
-              </div>
-            </div>
-
+            <Nav />
             
 
             <div className="flex items-center gap-4 ">

@@ -37,7 +37,7 @@ function SocialLinks() {
     <div className="flex gap-4">
       {socialLinks.map((items, i) => (
         <Link href={items.link} key={i} target="_blank">
-          <div className="bg-white text-slate-900 hover:text-white  h-7 w-7 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-[#F6AA02]  hover:-translate-y-1 duration-75 ">
+          <div className="bg-white text-slate-900 hover:text-white  h-8 w-8 shadow-xl text-base rounded-full flex items-center justify-center footer-icons hover:bg-[#F6AA02]  hover:-translate-y-1 duration-75 ">
             <span className="">{items.iconLink}</span>
           </div>
         </Link>

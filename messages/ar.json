@@ -6,12 +6,10 @@
 
   "Menu": {
     "home": "الرئيسية",
-    "features": "معلواماتنا",
-    "services": "خدماتانا",
-    "partners": "شركائانا",
-    "news": "اخبارنا",
-    "temework": "فريق العمل",
-    "contact": "التواصل معنا"
+    "products": "المنتجات",
+    "packages": "البكدجات",
+    "services": "خدماتنا"
+    
   },
 
   "Hero": {
