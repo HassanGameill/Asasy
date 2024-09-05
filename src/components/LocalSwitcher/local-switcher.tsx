@@ -37,7 +37,7 @@ export default function LocaleSwitcher() {
       <button
         type="button"
         className={`text-white p-1 rounded-md text-[11px] hover:opacity-45 ${
-          currentLocale === 'en' ? 'bg-[#FFD500] font-medium' : 'bg-green-600'
+          currentLocale === 'en' ? 'bg-[#FFD500] font-medium' : 'bg-blue-900'
         }`}
         onClick={toggleLocale}
         aria-pressed={isPending}
