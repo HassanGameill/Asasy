@@ -38,7 +38,7 @@ function Nav() {
 
 
   return (
-    <div className="flex w-full items-center justify-between px-4">
+    <div className="flex w-full items-center justify-between lg:justify-center px-4">
  
     <div>
       <button
@@ -55,7 +55,7 @@ function Nav() {
       </button>
       <nav
         id="navbarCollapse"
-        className={`navbar absolute right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
+        className={`navbar absolute  right-0 z-30 w-[250px] rounded border-[.5px] border-body-color/50 bg-white px-6 py-4 duration-300 dark:border-body-color/20 dark:bg-dark lg:visible lg:static lg:w-auto lg:border-none lg:!bg-transparent lg:p-0 lg:opacity-100 ${
           navbarOpen
             ? "visibility top-full opacity-100"
             : "invisible top-[120%] opacity-0"
@@ -69,7 +69,7 @@ function Nav() {
               {menuItem.path ? (
                 <Link
                   href={menuItem.path}
-                  className={` flex py-2 text-base lg:text-[14.5px] lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                  className={` flex  py-2 text-base lg:text-[14.5px] lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
                     pathname === menuItem.path
                       ? "text-primary dark:text-white"
                       : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"

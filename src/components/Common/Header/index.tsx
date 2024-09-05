@@ -1,4 +1,4 @@
-"use client";
+"use client"
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
@@ -37,7 +37,7 @@ const Header = () => {
   // Dark mode handling
   const { theme } = useTheme();
 
-  // Search bar state
+  // Search bar state for smaller screens
   const [openSearch, setOpenSearch] = useState(false);
   const handleOpenSearch = () => {
     setOpenSearch(!openSearch);
@@ -53,8 +53,7 @@ const Header = () => {
         }`}
       >
         <div className="container">
-          <div className="flex items-center  justify-between">
-
+          <div className="flex items-center justify-between">
             <div
               className={`w-[100px] max-w-full px-4 xl:mr-12 ${openSearch ? " " : ""}`}
             >
@@ -65,7 +64,7 @@ const Header = () => {
                 }`}
               >
                 <Image
-                  src={ darklogo}
+                  src={darklogo}
                   alt="logo"
                   width={140}
                   height={30}
@@ -74,33 +73,41 @@ const Header = () => {
               </Link>
             </div>
 
-            <Nav />
-            
-
-            <div className="flex items-center gap-4 ">
-            <div
-              className={`search-box w-full cursor-pointer  flex items-center  shadow-md px-2 xss:rounded-lg ${openSearch ? " bg-[#2c2b2b] dark:bg-white px-3  " : "  justify-center  bg-white hover:bg-gray-50  "}    `}
-            >
-              <input
-                className={`${openSearch ? "w-full py-2 px-3" : "w-0 "}`}
-                type="text"
-                placeholder="Search By..."
-              />
-              <span className={`px-[3px] py-2 ${openSearch ? " text-white dark:text-[#222] " : "   text-[#2c2b2b]  "}`} onClick={handleOpenSearch}>
-                <HiOutlineMagnifyingGlass />
-              </span>
+            <div>
+              <Nav />
             </div>
+
+            <div className="flex items-center gap-4">
+              <div
+                className={`search-box w-full cursor-pointer flex items-center shadow-md px-2 xss:rounded-lg 
+                  ${openSearch ? " bg-[#2c2b2b] dark:bg-white px-3" : " justify-center bg-white "}
+                  lg:!flex lg:w-[300px] lg:bg-[#2c2b2b] lg:dark:bg-white lg:px-3`}
+              >
+                <input
+                  className={`${
+                    openSearch ? "w-full py-2 px-3" : "w-0"
+                  } lg:w-full lg:py-2 lg:px-3 lg:text-black`}
+                  type="text"
+                  placeholder="Search By..."
+                />
+                <span
+                  className={`px-[3px] py-2 ${openSearch ? " text-white dark:text-[#222]" : " text-[#2c2b2b]"}
+                    lg:text-white lg:dark:text-[#222]`}
+                  onClick={handleOpenSearch}
+                >
+                  <HiOutlineMagnifyingGlass />
+                </span>
+              </div>
+
               <div className="flex items-center gap-4">
                 <span className="text-[32px] cursor-pointer hover:text-green-400">
                   <BasketCart cart_badge={cart_badge} />
                 </span>
-                <span className="text-[20px] cursor-pointer hover:text-red-600">
+                {/* <span className="text-[20px] cursor-pointer hover:text-red-600">
                   <Wishlist cart_badge={wishlist_badge} />
-                </span>
+                </span> */}
               </div>
             </div>
-
-
           </div>
         </div>
       </header>
