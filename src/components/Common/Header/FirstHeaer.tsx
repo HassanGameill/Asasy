@@ -14,7 +14,7 @@ function FirstHeaer() {
 
         <div className="flex items-center justify-between">
 
-        <Link href="/blogs" className="LOGIN flex items-center gap-2 text-white hover:text-green-400 cursor-pointer">
+        <Link href="/login" className="LOGIN flex items-center gap-2 text-white hover:text-green-400 cursor-pointer">
           <span className="text-[11px] sm:text-[14px] md:text-[15px] ">Login</span>
           <span className="text-[14px] md:text-[18px]">
             <CiLogin />

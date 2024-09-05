@@ -34,7 +34,7 @@ const BlogsHero = () => {
         <div className="container">
           <div className="-mx-4 flex flex-wrap">
             <div className="w-full px-4">
-              Welcome In blogs Page
+              Login Page
             </div>
           </div>
         </div>
