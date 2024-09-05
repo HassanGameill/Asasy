@@ -5,14 +5,9 @@ import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import lightLogo from '../../../../public/images/Logos/Asasy_logo1.png';
-import darklogo from '../../../../public/images/Logos/dark-logo.png';
+import lightLogo from "../../../../public/images/Logos/Asasy_logo1.png";
+import darklogo from "../../../../public/images/Logos/dark-logo.png";
 import SocialLinks from "../SocialLinks/SocialLinks";
-
-
-
-
-
 
 interface socialLinks {
   imgSrc: string;
@@ -21,33 +16,28 @@ interface socialLinks {
   iconLink: React.ReactNode;
 }
 
-
 const socialLinks: socialLinks[] = [
   {
-      imgSrc: '/assets/footer/facebook.svg',
-      link: 'www.facebook.com',
-      width: 10,
-      iconLink: <FaFacebookF />,
+    imgSrc: "/assets/footer/facebook.svg",
+    link: "www.facebook.com",
+    width: 10,
+    iconLink: <FaFacebookF />,
   },
 
   {
-      imgSrc: '/assets/footer/insta.svg',
-      link: 'www.instagram.com',
-      width: 14,
-      iconLink: <FaInstagram />,
+    imgSrc: "/assets/footer/insta.svg",
+    link: "www.instagram.com",
+    width: 14,
+    iconLink: <FaInstagram />,
   },
 
   {
-      imgSrc: '/assets/footer/twitter.svg',
-      link: 'www.twitter.com',
-      width: 14,
-      iconLink: <FaLinkedinIn />,
+    imgSrc: "/assets/footer/twitter.svg",
+    link: "www.twitter.com",
+    width: 14,
+    iconLink: <FaLinkedinIn />,
   },
-
-]
-
-
-
+];
 
 const Footer = () => {
   // change dark logo
@@ -61,22 +51,20 @@ const Footer = () => {
               <div className="mb-12 max-w-[360px] lg:mb-16">
                 <Link href="/" className="mb-8 inline-block w-[80px]">
                   <Image
-                    src={theme === "dark" ? darklogo : lightLogo}
+                    src={darklogo}
                     alt="logo"
                     className="w-full "
                     width={0}
                     height={0}
                   />
-                  
                 </Link>
                 <p className="mb-9 text-base leading-relaxed text-body-color dark:text-body-color-dark">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                   Integer lobortis.
                 </p>
-                <div className='flex gap-4'>
-
-                      <SocialLinks />
-                    </div>
+                <div className="flex gap-4">
+                  <SocialLinks />
+                </div>
               </div>
             </div>
 
@@ -182,9 +170,6 @@ const Footer = () => {
               </div>
             </div>
           </div>
-
-          
-          
         </div>
       </footer>
     </>
