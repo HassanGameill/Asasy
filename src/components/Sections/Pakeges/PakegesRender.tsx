@@ -5,22 +5,24 @@ import PakegeData from "./PakegesData";
 import PakegeCard from "@/components/Common/CategoriesCards/pakegeCard";
 import NewList from "@/components/LogicList/NewList/NewList";
 
-
-
 function PakegesRender() {
   // translation
-
 
   const records = PakegeData;
 
   const PakegesRender = (itemData) => (
     <div className="" key={itemData}>
-      <PakegeCard {...itemData}  />
+      <PakegeCard {...itemData} />
     </div>
   );
 
   return (
     <div className="">
+      <NewList
+        records={records}
+        renderItem={PakegesRender}
+        emptyMessage="There are no categories"
+      />
 
       <NewList
         records={records}

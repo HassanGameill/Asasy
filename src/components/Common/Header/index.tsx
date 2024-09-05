@@ -55,12 +55,12 @@ const Header = () => {
         <div className="container">
           <div className="flex items-center justify-between">
             <div
-              className={`w-[100px] max-w-full px-4 xl:mr-12 ${openSearch ? " " : ""}`}
+              className={`w-[55px] sm:w-[60px] md:w-[70px]  max-w-full xl:mr-12 ${openSearch ? " " : ""}`}
             >
               <Link
                 href="/"
                 className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-1" : "py-2 mt-5"
+                  sticky ? "py-5 lg:py-1" : "py-1 lg:py-2 mt-5"
                 }`}
               >
                 <Image
@@ -79,14 +79,14 @@ const Header = () => {
 
             <div className="flex items-center gap-4">
               <div
-                className={`search-box w-full cursor-pointer flex items-center shadow-md px-2 xss:rounded-lg 
+                className={`search-box w-full cursor-pointer flex items-center shadow-md px-2 xss:rounded-lg  
                   ${openSearch ? " bg-[#2c2b2b] dark:bg-white px-3" : " justify-center bg-white "}
                   lg:!flex lg:w-[300px] lg:bg-[#2c2b2b] lg:dark:bg-white lg:px-3`}
               >
                 <input
-                  className={`${
+                  className={`placeholder-gray-400 dark:placeholder-gray-600 dark:text-black text-white ${
                     openSearch ? "w-full py-2 px-3" : "w-0"
-                  } lg:w-full lg:py-2 lg:px-3 lg:text-black`}
+                  } lg:w-full lg:py-2 lg:px-3 `}
                   type="text"
                   placeholder="Search By..."
                 />
