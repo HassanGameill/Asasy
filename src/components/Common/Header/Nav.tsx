@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import menuData from "./menuData";
 import { usePathname } from "next/navigation";
 import { useTheme } from "next-themes";
-import Link from "next/link";
+import { Link } from "@/navigation";
 import { HiBars3 } from "react-icons/hi2";
 
 

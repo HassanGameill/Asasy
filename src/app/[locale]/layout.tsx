@@ -6,10 +6,10 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { ReactNode } from "react";
 import ScrollToTop from "@/components/Common/ScrollToTop";
-import { ProvidersTheme } from "./Providers/ThemeProvider";
+import { ProvidersTheme } from "../Providers/ThemeProvider";
 import Footer from "@/components/Common/Footer";
 import HeaderRender from "@/components/Common/Header/HeaderRender";
-import StoreProvider from "./Providers/storeProvider";
+import StoreProvider from "../Providers/storeProvider";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -26,7 +26,7 @@ export default async function RootLayout({
 
   return (
     <html lang={locale}>
-      <body className={`bg-[#FCFCFC] dark:bg-black ${inter.className}`}>
+      <body className={`bg-[#FEFAE0] dark:bg-black ${inter.className}`}>
         <StoreProvider>
         <ProvidersTheme>
           <NextIntlClientProvider messages={messages}>

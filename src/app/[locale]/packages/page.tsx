@@ -3,7 +3,7 @@ import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Asasy-Login",
+  title: "Asasy-Packages",
   description: "marketing and business solutions",
   icons: {
     icon: "../icons/dark-logo.png",
@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 function Login() {
   return (
     <div>
-      <BlogsHero title={"Login"} bgColor="bg-green-300" />
+      <BlogsHero title={"Packages"} bgColor="bg-blue-300" />
     </div>
   );
 }

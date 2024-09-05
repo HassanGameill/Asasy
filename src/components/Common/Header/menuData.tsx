@@ -15,7 +15,7 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 2,
     title: t("products"),
-    path: "#products",
+    path: "/products",
     newTab: false,
   },
 
@@ -23,14 +23,14 @@ const menuData = (t: (key: string) => string): Menu[] => [
   {
     id: 3,
     title: t("packages"),
-    path: "#packages",
+    path: "/packages",
     newTab: false,
   },
 
   {
     id: 4,
     title: t("services"),
-    path: "#services",
+    path: "/services",
     newTab: false,
   },
   
