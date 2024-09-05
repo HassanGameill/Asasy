@@ -73,7 +73,7 @@ const Header = () => {
               </Link>
             </div>
 
-            <div>
+            <div className="">
               <Nav />
             </div>
 
@@ -99,7 +99,7 @@ const Header = () => {
                 </span>
               </div>
 
-              <div className="flex items-center gap-4">
+              <div className="flex items-center">
                 <span className="text-[32px] cursor-pointer hover:text-green-400">
                   <BasketCart cart_badge={cart_badge} />
                 </span>

@@ -45,7 +45,7 @@ function Nav() {
         onClick={navbarToggleHandler}
         id="navbarToggler"
         aria-label="Mobile Menu"
-        className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg   focus:ring-2 lg:hidden"
+        className="absolute right-1 sm:right-2 md:right-3 top-1/2 block translate-y-[-50%] rounded-lg   focus:ring-2 lg:hidden"
       >
         <span className="text-[30px]">
         <HiBars3 />
