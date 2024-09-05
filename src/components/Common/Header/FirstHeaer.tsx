@@ -3,7 +3,7 @@ import SocialLinks from "../SocialLinks/SocialLinks";
 import { HiOutlinePhone } from "react-icons/hi2";
 import ThemeToggler from "./ThemeToggler";
 import { CiLogin } from "react-icons/ci";
-import LocaleSwitcher from "@/LocalSwitcher/local-switcher";
+import LocaleSwitcher from "@/components/LocalSwitcher/local-switcher";
 import { Link } from "@/navigation";
 
 
@@ -21,8 +21,6 @@ function FirstHeaer() {
           </span>
         </Link>
         
-
-
 
         <div className="xss:hidden md:block">
           <SocialLinks />
