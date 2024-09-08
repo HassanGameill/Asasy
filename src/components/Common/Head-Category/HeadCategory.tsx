@@ -16,8 +16,8 @@ const HeadCategory: React.FC<SubTitlesProps> = ({
   return (
     <div className="flex items-center justify-between pt-4">
       <div className="flex items-center gap-2">
-        <span className="border-2 h-7 border-[#FFD500] shadow-2xl dark:border-[#F6AA02] rounded-lg"></span>
-        <h2 className="text-[#E71B20] text-[20px] head-text">{title}</h2>
+        <span className="border-2 h-7 border-[#FFD500] dark: shadow-2xl dark:border-primary rounded-lg"></span>
+        <h2 className="text-[#E71B20] dark:text-[#FFD500] text-[16px] font-semibold ">{title}</h2>
       </div>
       {btnTitle && (
         <Link
