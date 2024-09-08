@@ -9,6 +9,7 @@ import { useLocale, useTranslations } from "next-intl";
 import heroData from "./heroData";
 import BannerHeader from "../Banner/BannerHeader";
 import HeroCardRender from "./Hero-Card/HeroCardRender";
+import { useTheme } from "next-themes";
 
 const Hero = () => {
   const [isOpen, setOpen] = useState(false);
@@ -18,6 +19,7 @@ const Hero = () => {
   const heroContent = heroData(t);
 
   const local = useLocale();
+  const { theme, setTheme } = useTheme();
 
   // Images array for the slider
   const dealImages = [DealImg1, DealImg2];
@@ -49,7 +51,7 @@ const Hero = () => {
                             }`}
                           >
                             {item.title}{" "}
-                            <span className="text-primary">
+                            <span className={theme === "dark" ? "text-[#FFD500]" : "text-primary"}>
                               <Typewriter
                                 words={
                                   local === "ar"

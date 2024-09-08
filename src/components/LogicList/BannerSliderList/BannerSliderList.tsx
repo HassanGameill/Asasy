@@ -60,7 +60,7 @@ const BannerSliderList = <T extends HasId>({
         spaceBetween={30}
         slidesPerView={1}
         pagination={{ clickable: true }}
-        autoplay={{ delay: 3000 }}
+        autoplay={{ delay: 4000 }}
         className="w-full h-full"
         navigation={{
           prevEl: prevRef.current,
