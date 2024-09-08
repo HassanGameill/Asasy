@@ -5,7 +5,6 @@ import Link from "next/link";
 import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedinIn } from "react-icons/fa6";
-import lightLogo from "../../../../public/images/Logos/Asasy_logo1.png";
 import darklogo from "../../../../public/images/Logos/dark-logo.png";
 import SocialLinks from "../SocialLinks/SocialLinks";
 

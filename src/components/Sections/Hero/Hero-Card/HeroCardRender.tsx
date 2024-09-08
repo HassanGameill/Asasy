@@ -3,6 +3,7 @@ import React from "react";
 import SliderList from "../../../LogicList/MultipleSlider/SliderList";
 import CardData from "./CardData";
 import HeroCard from "../../../Common/CategoriesCards/HeroCard";
+import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
 
 function HeroCardRender() {
   // translation
@@ -18,6 +19,7 @@ function HeroCardRender() {
 
   return (
     <div className="">
+      <HeadCategory title="Best Offers" btnTitle="More" pathText="/offers" />
 
       <SliderList
         records={records}

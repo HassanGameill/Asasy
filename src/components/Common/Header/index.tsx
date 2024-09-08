@@ -99,8 +99,8 @@ const Header = () => {
                 </span>
               </div>
 
-              <div className="flex items-center">
-                <span className="text-[32px] cursor-pointer hover:text-green-400">
+              <div className="flex items-center ">
+                <span className="text-[32px] cursor-pointer hover:text-primary">
                   <BasketCart cart_badge={cart_badge} />
                 </span>
                 {/* <span className="text-[20px] cursor-pointer hover:text-red-600">

@@ -40,13 +40,13 @@ function CategoryCard(itemData) {
             />
           </div>
           <div className="pt-2">
-            <h3 className="text-sm  md:text-md  font-semibold">{title}</h3>
+            <h3 className="text-sm  md:text-md text-primary  font-semibold">{title}</h3>
             <h4 className=" text-[10px] font-normal opacity-50">{subtitle}</h4>
 
             <div className="flex justify-between items-center pt-2 pb-2">
-              <span className="text-[12px] font-semibold">${price.toFixed(2)}</span>
+              <span className="text-[12px] text-[#FFD500] font-semibold">${price.toFixed(2)}</span>
 
-              <div className="BUTTON bg-green-400 px-3 py-1 rounded-xl hover:text-white cursor-pointer">
+              <div className="BUTTON bg-[#E71B20] hover:bg-primary px-3 py-1 rounded-xl text-white hover:text-white cursor-pointer">
                 <button className="flex items-center gap-2">
                   <span className="text-[15px]">
                     <CiShoppingCart />

@@ -27,7 +27,7 @@ function PakegeCard(itemData) {
 
       <div
       onClick={() => handleCardClick(itemData)}
-        className={`flex justify-center    w-[280px] sm:w-[175px]   md:w-[200px] lg:w-[280px]   h-[240px]  lg:h-[275px]  mx-auto my-8 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer   bg-white hover:bg-white dark:hover:bg-white text-black    duration-300 hover:shadow-one   dark:shadow-3xl  dark:hover:shadow-green-500 `}
+        className={`flex justify-center  w-[280px] sm:w-[175px]   md:w-[200px] lg:w-[280px]   h-[240px]  lg:h-[275px]  mx-auto my-8 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer   bg-white hover:bg-white dark:hover:bg-white text-black    duration-300 hover:shadow-one   dark:shadow-3xl  dark:hover:shadow-green-500 `}
       >
         <div className={`my-2 p-1`}>
 
@@ -49,7 +49,7 @@ function PakegeCard(itemData) {
             <div className="flex justify-between items-center pt-2 pb-2">
               <span className="text-[12px] font-semibold">${price.toFixed(2)}</span>
 
-              <div className="BUTTON bg-green-400 px-3 py-2 rounded-xl hover:text-white cursor-pointer">
+              <div className="BUTTON bg-primary px-3 py-2 rounded-xl text-white hover:text-white cursor-pointer">
                 <button className="flex items-center gap-2">
                   <span className="text-[15px]">
                     <CiShoppingCart />

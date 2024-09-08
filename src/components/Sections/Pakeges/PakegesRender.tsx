@@ -5,6 +5,7 @@ import PakegeData from "./PakegesData";
 import PakegeCard from "@/components/Common/CategoriesCards/pakegeCard";
 import NewList from "@/components/LogicList/NewList/NewList";
 import NewBanner from "@/components/Common/Banners/NewBanner";
+import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
 
 function PakegesRender() {
   // translation
@@ -19,6 +20,7 @@ function PakegesRender() {
 
   return (
     <div className="">
+      <HeadCategory title="Best Offers" btnTitle="show more" pathText="/offers" />
       <NewList
         records={records}
         renderItem={PakegesRender}
