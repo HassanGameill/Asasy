@@ -15,6 +15,10 @@ interface DialogProps {
 }
 
 const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
+  const locale = useLocale();
+  const dir = locale === "ar" ? "rtl" : "ltr";
+
+
   return (
     <Dialog open={isOpen} onClose={onClose} className="relative z-[9999990]">
       {/* The backdrop, rendered as a fixed sibling to the panel container */}
@@ -38,7 +42,7 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
               </span>
             </div>
             {data && (
-              <div className="px-4">
+              <div className="px-4" dir={dir}>
                 <div className="flex items-center gap-3 mb-2 ">
                   <div className="bg-white rounded-full">
                     <Image
