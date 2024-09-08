@@ -1,6 +1,5 @@
 "use client";
 
-import ModalVideo from "react-modal-video";
 import { Typewriter } from "react-simple-typewriter";
 import { useState } from "react";
 
@@ -29,12 +28,6 @@ const Hero = () => {
         id="home"
         className={`relative z-10 overflow-hidden pb-16 pt-[120px] dark:bg-gray-dark md:pb-[120px] md:pt-[150px] xl:pb-[160px] xl:pt-[180px] 2xl:pb-[200px] 2xl:pt-[210px]`}
       >
-        <ModalVideo
-          channel="youtube"
-          isOpen={isOpen}
-          videoId="hjnQfaml14s"
-          onClose={() => setOpen(false)}
-        />
 
         <div className="container">
           <div className="-mx-4 flex flex-wrap">

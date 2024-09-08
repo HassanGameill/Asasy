@@ -20,27 +20,7 @@ function PakegesRender() {
 
   return (
     <div className="">
-      <HeadCategory title="Best Offers" btnTitle="show more" pathText="/offers" />
-      <NewList
-        records={records}
-        renderItem={PakegesRender}
-        emptyMessage="There are no categories"
-      />
-
-      <NewList
-        records={records}
-        renderItem={PakegesRender}
-        emptyMessage="There are no categories"
-      />
-
-      <NewBanner />
-
-      <NewList
-        records={records}
-        renderItem={PakegesRender}
-        emptyMessage="There are no categories"
-      />
-
+      <HeadCategory title="Best Offers" btnTitle="More" pathText="/offers" />
       <NewList
         records={records}
         renderItem={PakegesRender}
