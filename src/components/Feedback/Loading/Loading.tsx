@@ -24,6 +24,7 @@ const Loading = ({
   children,
   type = "category",
 }: LoadingProps) => {
+  
   const Component = skeletonsTypes[type];
 
   if (status === "pending") {

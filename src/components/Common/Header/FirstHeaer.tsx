@@ -8,7 +8,7 @@ import { Link } from "@/navigation";
 
 function FirstHeaer() {
   return (
-    <div className="bg-slate-800  pb-2 pt-2 flex flex-col items-center justify-center">
+    <div className="bg-slate-800  pb-2 pt-2 flex flex-col items-center justify-center ">
       <div className="container ">
         <div className="flex items-center justify-between">
           <Link
