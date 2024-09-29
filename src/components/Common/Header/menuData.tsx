@@ -34,6 +34,20 @@ const menuData = (t: (key: string) => string): Menu[] => [
     newTab: false,
   },
   
+{
+    id: 5,
+    title: t("services"),
+    path: "/services",
+    newTab: false,
+  },
+  
+{
+    id: 6,
+    title: t("services"),
+    path: "/services",
+    newTab: false,
+  },
+  
 
  
 ];

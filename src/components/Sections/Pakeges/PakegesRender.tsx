@@ -20,7 +20,8 @@ function PakegesRender() {
 
   return (
     <div className="">
-      <HeadCategory title="Best Offers" btnTitle="More" pathText="/offers" />
+      <HeadCategory title_en="Best Offers" title_ar="افضل العروض"  btnTitle_en="More" btnTitle_ar="المذيد" pathText="/offers" />
+      
       <NewList
         records={records}
         renderItem={PakegesRender}

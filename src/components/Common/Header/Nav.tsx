@@ -33,7 +33,7 @@ const Nav: React.FC<NavProps> = ({ navbarOpen, navbarToggleHandler }) => {
   // Helper to render submenu
   const renderSubmenu = (submenu: MenuItem[], index: number) => (
     <div
-      className={`submenu relative left-0 top-full rounded-sm bg-white dark:bg-dark transition-all duration-300 lg:absolute lg:top-[110%] lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:shadow-lg ${
+      className={`submenu relative left-0  top-full rounded-sm bg-white dark:bg-dark transition-all duration-300 lg:absolute lg:top-[110%] lg:invisible lg:opacity-0 lg:group-hover:visible lg:group-hover:opacity-100 lg:shadow-lg ${
         openIndex === index ? "block" : "hidden"
       }`}
     >
@@ -69,6 +69,8 @@ const Nav: React.FC<NavProps> = ({ navbarOpen, navbarToggleHandler }) => {
               <Link
                 href={menuItem.path}
                 className={`flex py-2 text-base lg:text-[14.5px] lg:mr-0 lg:inline-flex lg:px-0 lg:py-6 ${
+                  locale === "ar" ? "__rtl_lang font-[500]" : ""
+                } ${
                   pathname === menuItem.path
                     ? "text-primary dark:text-white"
                     : "text-dark hover:text-primary dark:text-white/70 dark:hover:text-white"

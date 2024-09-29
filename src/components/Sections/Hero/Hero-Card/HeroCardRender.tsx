@@ -8,23 +8,25 @@ import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
 function HeroCardRender() {
   // translation
 
-
   const records = CardData;
 
   const renderCategories = (itemData) => (
     <div className="" key={itemData}>
-      <HeroCard {...itemData}  />
+      <HeroCard {...itemData} />
     </div>
   );
 
   return (
     <div className="">
-      <HeadCategory title="Best Offers" btnTitle="More" pathText="/offers" />
-
-      <SliderList
-        records={records}
-        renderItem={renderCategories}
+      <HeadCategory
+        title_en="Best Offers"
+        title_ar="افضل العروض"
+        btnTitle_en="More"
+        btnTitle_ar="المذيد"
+        pathText="/offers"
       />
+
+      <SliderList records={records} renderItem={renderCategories} />
     </div>
   );
 }
