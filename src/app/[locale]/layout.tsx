@@ -11,6 +11,7 @@ import Footer from "@/components/Common/Footer";
 import HeaderRender from "@/components/Common/Header/HeaderRender";
 import StoreProvider from "../Providers/storeProvider";
 import WhatsUpLink from "@/components/Common/StableLinks/WhatsUpLink/WhatsUpLink";
+import MobileHeader from "@/components/Common/MobileHeader/MobileHeader";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default async function RootLayout({
         <ProvidersTheme>
           <NextIntlClientProvider messages={messages}>
             <HeaderRender />
+            <MobileHeader />
             <main className={`${locale === "ar" ? "__rtl_lang" : ""}`}>{children}</main>
             
             <ScrollToTop />

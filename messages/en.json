@@ -12,6 +12,17 @@
     
   },
 
+
+  "MobileMenu": {
+    "shop": "Shop",
+    "wishlist": "Wishlist",
+    "cart": "Cart",
+    "account": "Account",
+    "chat": "Chat"
+    
+    
+  },
+
   "Hero": {
     "title": "Listing orders now",
     "description": "Advanced Marketing Agency is your ideal partner for achieving success in the business world. We offer a comprehensive range ",
