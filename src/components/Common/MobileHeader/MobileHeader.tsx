@@ -46,7 +46,7 @@ const Menu: MenuType[] = [
   {
     name: 'Chat',
     path: '/',
-    icon: <IoLogoWhatsapp className='text-green-500'/>,
+    icon: <IoLogoWhatsapp className='text-green-500 text-[22px]'/>,
   },
   
   
@@ -55,7 +55,7 @@ const Menu: MenuType[] = [
 function MobileHeader() {
   return (
     <header>
-        <div className="lg:hidden bg-white  dark:text-slate-800 py-3 w-full fixed bottom-0 mb-2 z-[999] rounded-3xl shadow-xl">
+        <div className="lg:hidden bg-white  dark:text-slate-800 py-3 w-full fixed bottom-0 mb-2 z-[999] rounded-3xl shadow-2xl">
           <nav className="container flex gap-4 items-center justify-between">
             {
               Menu.map((item, idx) => (
