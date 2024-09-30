@@ -38,7 +38,7 @@ function PakegeCard(itemData) {
               alt="user-image"
               width={0}
               height={0}
-              className="m-auto inline-block w-full  h-[220px] sm:h-[130px] lg:h-[220px] rounded-xl"
+              className="m-auto inline-block w-full  h-[210px] sm:h-[110px] lg:h-[200px] rounded-xl"
             />
           </div>
           <div className="pt-2 px-3">
@@ -50,16 +50,17 @@ function PakegeCard(itemData) {
             <div className="flex justify-between items-center pt-2 pb-2">
               <span className="text-[12px] font-bold text-primary ">E.L {price.toFixed(2)}</span>
 
-              <div className="BUTTON absolute bottom-40 right-5 bg-white shadow-2xl  px-3 py-2 rounded-xl  cursor-pointer">
-                <button className="flex  flex-col items-center gap-3 text-primary  ">
+              <div className="BUTTON  bottom-40 right-5 bg-white shadow-2xl  px-3 py-2 rounded-xl  cursor-pointer">
+                <button className="flex   items-center gap-3 text-primary  ">
+                <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-primary text-white p-1 rounded-md">
+                    <CiShoppingCart />
+                  </span>
 
-                  <span className="text-[16px] font-bold shadow-lg hover:bg-slate-800 bg-[#FFD500] text-slate-800  hover:text-white p-1 rounded-md">
+                  <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-[#FFD500] text-slate-800  hover:text-white p-1 rounded-md">
                     <IoEyeOutline />
                   </span>
 
-                  <span className="text-[16px] font-bold shadow-lg hover:bg-slate-800 bg-primary text-white p-1 rounded-md">
-                    <CiShoppingCart />
-                  </span>
+                  
 
                 </button>
               </div>
