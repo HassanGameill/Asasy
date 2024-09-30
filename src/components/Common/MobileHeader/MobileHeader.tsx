@@ -5,6 +5,8 @@ import Wishlist from '@/components/Ecommerce/Wishlist/Wishlist';
 import BasketCart from '@/components/Ecommerce/BasketCart/BasketCart';
 import { TbCategory2 } from "react-icons/tb";
 import { FiShoppingCart, FiUser, FiMessageSquare } from "react-icons/fi"; // Import more icons as needed
+import { IoLogoWhatsapp } from "react-icons/io";
+
 
 
 import style from './style.module.css'
@@ -44,7 +46,7 @@ const Menu: MenuType[] = [
   {
     name: 'Chat',
     path: '/',
-    icon: <FiMessageSquare/>,
+    icon: <IoLogoWhatsapp className='text-green-500'/>,
   },
   
   

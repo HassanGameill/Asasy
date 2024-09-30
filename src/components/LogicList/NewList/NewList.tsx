@@ -56,7 +56,7 @@ const NewList = <T extends HasId>({
             spaceBetween: 10,
           },
           440: {
-            slidesPerView: 1,
+            slidesPerView: 2,
             spaceBetween: 10,
           },
           540: {
