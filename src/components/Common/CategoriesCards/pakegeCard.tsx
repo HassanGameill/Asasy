@@ -48,7 +48,7 @@ function PakegeCard(itemData) {
             </h4>
 
             <div className="flex justify-between items-center pt-2 pb-2">
-              <span className="text-[12px] font-bold text-primary ">E.L {price.toFixed(2)}</span>
+              <span className="text-[12px] font-bold text-primary ">L.E {price.toFixed(2)}</span>
 
               <div className="BUTTON  bottom-40 right-5   px-3 py-2 rounded-xl  cursor-pointer">
                 <button className="flex   items-center gap-3 text-primary  ">
