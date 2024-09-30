@@ -34,8 +34,8 @@ const BasketCart = ({ cart_badge }: any) => {
 
   return (
     <div className="relative">
-      <CiShoppingCart />
-      {<span className={`${quantityStile}`}>1</span>}
+      <CiShoppingCart className="" />
+      {<span className={` ${quantityStile}`}>1</span>}
     </div>
   );
 };

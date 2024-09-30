@@ -53,7 +53,7 @@ const Menu: MenuType[] = [
 function MobileHeader() {
   return (
     <header>
-        <div className="lg:hidden bg-white py-3 w-full fixed bottom-0 mb-2 z-[999] rounded-3xl shadow-xl">
+        <div className="lg:hidden bg-white  dark:text-slate-800 py-3 w-full fixed bottom-0 mb-2 z-[999] rounded-3xl shadow-xl">
           <nav className="container flex gap-4 items-center justify-between">
             {
               Menu.map((item, idx) => (

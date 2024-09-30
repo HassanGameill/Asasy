@@ -26,7 +26,7 @@ export default function WhatsUpLink() {
     return () => window.removeEventListener("scroll", toggleVisibility);
   }, []);
   return (
-    <div className="fixed bottom-8 left-8 z-[99]" data-aos="fade-up">
+    <div className="hidden lg:block fixed bottom-8 left-8 z-[99]" data-aos="fade-up">
       {isVisible && (
         <Link href={"https://wa.me/+201015882008"}  target="_blank">
         <div

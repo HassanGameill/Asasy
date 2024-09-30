@@ -48,7 +48,7 @@ const Wishlist = ({cart_badge}: any) => {
   
   return (
     <div className="relative">
-        <span className="text-[20px]">
+        <span className="text-[16px] lg:text-[20px]">
         <FaRegHeart />
         </span>
        
