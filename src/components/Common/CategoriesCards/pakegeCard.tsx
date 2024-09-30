@@ -28,7 +28,7 @@ function PakegeCard(itemData) {
 
       <div
       onClick={() => handleCardClick(itemData)}
-        className={`flex justify-center mx-5 sm:mx-2 lg:mx-5`}
+        className={`flex justify-center mx-8 sm:mx-2 lg:mx-5`}
       >
         <div className={` relative  w-[280px] h-[320px] sm:w-[175px] sm:h-[230px]  md:w-[200px]   lg:w-[280px]     lg:h-[330px]  mx-auto my-8 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer   bg-white hover:bg-white dark:hover:bg-white text-black    duration-300 hover:shadow-one   dark:shadow-3xl  dark:hover:shadow-green-500`}>
 
@@ -41,6 +41,7 @@ function PakegeCard(itemData) {
               className="m-auto inline-block w-full  h-[200px] sm:h-[110px] lg:h-[200px] rounded-xl"
             />
           </div>
+
           <div className="pt-2 px-3">
             <h3 className="text-sm  md:text-md  font-semibold">{title}</h3>
             <h4 className=" text-[10px] md:text-[11px] font-normal opacity-50  lg:my-1 line-clamp-2">
@@ -52,11 +53,11 @@ function PakegeCard(itemData) {
 
               <div className="BUTTON  bottom-40 right-5   px-3 py-2 rounded-xl  cursor-pointer">
                 <button className="flex   items-center gap-3 text-primary  ">
-                <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-primary text-white p-1 rounded-md">
+                <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-primary text-white p-1 rounded-md transition-all duration-300">
                     <CiShoppingCart />
                   </span>
 
-                  <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-[#FFD500] text-slate-800  hover:text-white p-1 rounded-md">
+                  <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-[#FFD500] text-slate-800  hover:text-white p-1 rounded-md transition-all duration-300">
                     <IoEyeOutline />
                   </span>
 
