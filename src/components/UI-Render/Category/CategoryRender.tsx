@@ -1,9 +1,9 @@
 "use client"
-import CategoryCard  from "./CategoryCard";
 import Loading  from "../../Feedback/Loading/Loading";
 import useCategories from "./useCategories";
 import SliderList from "../../LogicList/SliderList/SliderList";
 import NewList from "@/components/LogicList/NewList/NewList";
+import CategoryCard from "@/components/Common/CategoriesCards/HeroCard";
 
 const CategoryRender = () => {
   const { loading, error, records } = useCategories();
