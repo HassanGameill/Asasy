@@ -116,7 +116,7 @@ const NewList = <T extends HasId>({
           ref={nextRef}
           className={`p-2 lg:p-3 rounded-full ${
             isAtEnd ? "bg-black/70 text-white" : "bg-primary text-white"
-          } cursor-pointer shadow-sm absolute right-1  lg:-right-4`}
+          } cursor-pointer shadow-sm absolute -right-2 lg:-right-4`}
         >
           <HiChevronRight />
         </div>

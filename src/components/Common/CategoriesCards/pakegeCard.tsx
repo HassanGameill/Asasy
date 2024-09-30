@@ -4,6 +4,7 @@ import Image from "next/image";
 import { CiShoppingCart } from "react-icons/ci";
 import DialogPopUp from "../Dialog-PopUp/PopUp";
 import { IoEyeOutline } from "react-icons/io5";
+import { FaRegHeart } from "react-icons/fa";
 
 function PakegeCard(itemData) {
   const { id, imgSrc, title, subtitle, price } = itemData;
@@ -17,9 +18,9 @@ function PakegeCard(itemData) {
     setIsOpen(true);
   };
 
+
   return (
     <>
-
     <DialogPopUp
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
@@ -65,7 +66,18 @@ function PakegeCard(itemData) {
 
                 </button>
               </div>
+
+              
+
+
+
             </div>
+            <div className="absolute top-5 right-4 bg-white/90 hover:text-red-600 rounded-md p-2">
+                <span className="">
+                <FaRegHeart />
+                  
+                </span>
+              </div>
           </div>
         </div>
       </div>
