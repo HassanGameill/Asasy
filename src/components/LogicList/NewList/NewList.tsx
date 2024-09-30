@@ -6,7 +6,8 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 
 import { LottieHandler } from "../../Feedback/LottiHandler/LottiHandler";
-import { HiOutlineArrowNarrowLeft, HiOutlineArrowNarrowRight } from "react-icons/hi";
+
+import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
 
 type SliderListProps<T> = {
   records?: T[];
@@ -105,19 +106,19 @@ const NewList = <T extends HasId>({
       >
         <div
           ref={prevRef}
-          className={`p-2 lg:p-3 rounded-full  ${
-            isAtBeginning ? "bg-black/70 text-white" : "bg-green-400 text-black"
-          } cursor-pointer shadow-sm absolute -left-4`}
+          className={`p-2  lg:p-3 rounded-full  ${
+            isAtBeginning ? "bg-black/70 text-white" : "bg-primary text-white"
+          } cursor-pointer shadow-sm absolute -left-1 lg:-left-4`}
         >
-          <HiOutlineArrowNarrowLeft />
+          <HiChevronLeft />
         </div>
         <div
           ref={nextRef}
           className={`p-2 lg:p-3 rounded-full ${
-            isAtEnd ? "bg-black/70 text-white" : "bg-green-400 text-black"
-          } cursor-pointer shadow-sm absolute -right-4`}
+            isAtEnd ? "bg-black/70 text-white" : "bg-primary text-white"
+          } cursor-pointer shadow-sm absolute right-1  lg:-right-4`}
         >
-          <HiOutlineArrowNarrowRight />
+          <HiChevronRight />
         </div>
       </div>
     </div>
