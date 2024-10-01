@@ -1,3 +1,4 @@
+"use client"
 import React, { useRef, useState, useEffect } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination } from "swiper/modules";
@@ -8,6 +9,7 @@ import "swiper/css/pagination";
 import { LottieHandler } from "../../Feedback/LottiHandler/LottiHandler";
 
 import { HiChevronLeft, HiChevronRight } from "react-icons/hi2";
+import { useLocale } from "next-intl";
 
 type SliderListProps<T> = {
   records?: T[];
@@ -27,6 +29,9 @@ const NewList = <T extends HasId>({
   const [isAtBeginning, setIsAtBeginning] = useState(true);
   const [isAtEnd, setIsAtEnd] = useState(false);
 
+  const locale = useLocale();
+
+
   const prevRef = useRef<HTMLDivElement>(null);
   const nextRef = useRef<HTMLDivElement>(null);
 
@@ -43,7 +48,9 @@ const NewList = <T extends HasId>({
 
   return (
     <div
-      className="relative"
+      className={`relative ${
+        locale === "ar" ? "__rtl_lang" : ""
+      }`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -51,6 +58,9 @@ const NewList = <T extends HasId>({
         modules={[Pagination, Navigation]}
         slidesPerView={1}
         spaceBetween={10}
+        dir={
+          locale === "ar" ? "__rtl_lang" : ""
+        }
         breakpoints={{
           340: {
             slidesPerView: 1,
