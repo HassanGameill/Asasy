@@ -18,21 +18,18 @@ function PakegeCard(itemData) {
     setIsOpen(true);
   };
 
-
   return (
     <>
-    <DialogPopUp
+      <DialogPopUp
         isOpen={isOpen}
         onClose={() => setIsOpen(false)}
         data={selectedData}
       />
 
-      <div
-      onClick={() => handleCardClick(itemData)}
-        className={`flex justify-center mx-8 sm:mx-2 lg:mx-5`}
-      >
-        <div className={` relative  w-[280px] h-[320px] sm:w-[175px] sm:h-[230px]  md:w-[200px]   lg:w-[280px]     lg:h-[330px]  mx-auto my-8 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer   bg-white hover:bg-white dark:hover:bg-white text-black    duration-300 hover:shadow-one   dark:shadow-3xl  dark:hover:shadow-green-500`}>
-
+      <div className={`flex justify-center mx-8 sm:mx-2 lg:mx-5`}>
+        <div
+          className={` relative  w-[280px] h-[320px] sm:w-[175px] sm:h-[230px]  md:w-[200px]   lg:w-[280px]     lg:h-[330px]  mx-auto my-8 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer   bg-white hover:bg-white dark:hover:bg-white text-black    duration-300 hover:shadow-one   dark:shadow-3xl  dark:hover:shadow-green-500`}
+        >
           <div className="w-full ">
             <Image
               src={imgSrc}
@@ -44,42 +41,39 @@ function PakegeCard(itemData) {
           </div>
 
           <div className="pt-2 px-3">
-            <h3 className="text-sm  md:text-md  font-semibold line-clamp-2">{title}</h3>
+            <h3 className="text-sm  md:text-md  font-semibold line-clamp-2">
+              {title}
+            </h3>
 
             <h4 className="hidden">
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia cupiditate impedit aliquid perspiciatis labore quaerat?
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
+              cupiditate impedit aliquid perspiciatis labore quaerat?
             </h4>
-            
 
             <div className="flex justify-between items-center pt-2 pb-2">
-              <span className="text-[12px] font-bold text-primary ">L.E {price.toFixed(2)}</span>
+              <span className="text-[12px] font-bold text-primary ">
+                L.E {price.toFixed(2)}
+              </span>
 
               <div className="BUTTON  bottom-40 right-5   px-3 py-2 rounded-xl  cursor-pointer">
                 <button className="flex   items-center gap-3 text-primary  ">
-                <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-primary text-white p-1 rounded-md transition-all duration-300">
+                  <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-primary text-white p-1 rounded-md transition-all duration-300">
                     <CiShoppingCart />
                   </span>
 
-                  <span className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-[#FFD500] text-slate-800  hover:text-white p-1 rounded-md transition-all duration-300">
+                  <span 
+                     onClick={() => handleCardClick(itemData)}
+                    className="text-[18px] font-bold shadow-lg hover:bg-slate-800 bg-[#FFD500] text-slate-800  hover:text-white p-1 rounded-md transition-all duration-300">
                     <IoEyeOutline />
                   </span>
-
-                  
-
                 </button>
               </div>
-
-              
-
-
-
             </div>
             <div className="absolute top-5 right-4 bg-white/90 hover:text-red-600 rounded-md p-2">
-                <span className="">
+              <span className="">
                 <FaRegHeart />
-                  
-                </span>
-              </div>
+              </span>
+            </div>
           </div>
         </div>
       </div>

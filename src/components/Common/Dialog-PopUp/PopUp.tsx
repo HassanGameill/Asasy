@@ -43,35 +43,45 @@ const DialogPopUp: React.FC<DialogProps> = ({ isOpen, onClose, data }) => {
             </div>
             {data && (
               <div className="px-4" dir={dir}>
-                <div className="flex items-center gap-3 mb-2 ">
-                  <div className="bg-white rounded-full">
+                <div className="flex items-center gap-3 mb-1 ">
+                  <div className="bg-white">
                     <Image
                       src={data.imgSrc}
                       alt={data.title}
                       width={0}
                       height={0}
-                      className="m-auto inline-block rounded-lg"
+                      className="m-auto inline-block rounded-t-lg"
                     />
                   </div>
                 </div>
 
                 <div className=" py-4">
                   <div className="">
-                    <h3 className="dark:text-lightblack text-md font-semibold">
+                    <h3 className="dark:text-lightblack text-sm mb-2 font-semibold">
                       {data.title}
                     </h3>
 
-                    <h4 className="text-lightblack text-[13px] font-normal opacity-50 ">
+                    <h4 className=" hidden text-lightblack text-[10px] font-normal opacity-50 mb-2 ">
                       Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum aperiam voluptatem enim eaque neque laborum.
                     </h4>
+
+                    <ul className=" text-sm my-5">
+                      <li className="">5 oil | 8 Tea | 5 Suger | 8 Rice | 5kg Brok | 5kg Brok | 5kg Brok</li>
+                     
+                      
+                    </ul>
+
+
                   </div>
 
+
+
                   <div className="flex justify-between items-center pt-2 pb-2">
-                    <span className="text-[16px] font-semibold">
+                    <span className="text-[14px] font-semibold">
                       Price: ${data.price.toFixed(2)}
                     </span>
 
-                    <div className="BUTTON bg-green-400 px-4 py-2 rounded-xl hover:text-white cursor-pointer">
+                    <div className="BUTTON bg-primary px-3 py-2 rounded-xl text-white hover:text-white cursor-pointer">
                       <button className="flex items-center gap-2">
                         <span className="text-[18px]">
                           <CiShoppingCart />
