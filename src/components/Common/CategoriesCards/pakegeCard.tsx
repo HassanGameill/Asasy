@@ -5,6 +5,7 @@ import { CiShoppingCart } from "react-icons/ci";
 import DialogPopUp from "../Dialog-PopUp/PopUp";
 import { IoEyeOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa";
+import { Link } from "@/navigation";
 
 function PakegeCard(itemData) {
   const { id, imgSrc, title, subtitle, price } = itemData;
@@ -30,6 +31,7 @@ function PakegeCard(itemData) {
         <div
           className={` relative  w-[280px] h-[320px] sm:w-[175px] sm:h-[230px]  md:w-[200px]   lg:w-[280px]     lg:h-[330px]  mx-auto my-8 hover:grayscale-0  shadow-md rounded-3xl cursor-pointer   bg-white hover:bg-white dark:hover:bg-white text-black    duration-300 hover:shadow-one   dark:shadow-3xl  dark:hover:shadow-green-500`}
         >
+          <Link href={`/articals/${id}`} >
           <div className="w-full ">
             <Image
               src={imgSrc}
@@ -40,15 +42,21 @@ function PakegeCard(itemData) {
             />
           </div>
 
-          <div className="pt-2 px-3">
-            <h3 className="text-sm  md:text-md  font-semibold line-clamp-2">
+          <h3 className="text-sm  pt-2 px-3 md:text-md  font-semibold line-clamp-2">
               {title}
             </h3>
+
+          </Link>
+
+          <div className="pt-2 px-3">
+            
 
             <h4 className="hidden">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia
               cupiditate impedit aliquid perspiciatis labore quaerat?
             </h4>
+
+            
 
             <div className="flex justify-between items-center pt-2 pb-2">
               <span className="text-[12px] font-bold text-primary ">
