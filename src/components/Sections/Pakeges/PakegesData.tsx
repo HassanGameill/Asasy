@@ -20,7 +20,7 @@ const PakegeData: Data[] = [
   {
     id: 1,
     imgSrc: Img01,
-    title: "Tea Pakege",
+    title: "Tea Pakege your ideal partner for achieving your ideal partner for achieving0",
     subtitle: "your ideal partner for achieving",
     price: 30
 
@@ -29,7 +29,7 @@ const PakegeData: Data[] = [
   {
     id: 2,
     imgSrc: Img02,
-    title: "Tea Pakege",
+    title: "Tea Pakege your ideal partner for achieving your ideal partner for achieving0",
     subtitle: "your ideal partner for achieving",
     price: 30
 
@@ -38,7 +38,7 @@ const PakegeData: Data[] = [
   {
     id: 3,
     imgSrc: Img03,
-    title: "Tea Pakege",
+    title: "Tea Pakege your ideal partner for achieving your ideal partner for achieving0",
     subtitle: "your ideal partner for achieving ",
     price: 30
 
@@ -47,7 +47,7 @@ const PakegeData: Data[] = [
   {
     id: 4,
     imgSrc: Img04,
-    title: "Tea Pakege",
+    title: "Tea Pakege your ideal partner for achieving your ideal partner for achieving",
     subtitle: "your ideal partner for achieving ",
     price: 30
 
@@ -56,7 +56,7 @@ const PakegeData: Data[] = [
   {
     id: 5,
     imgSrc: Img05,
-    title: "Tea Pakege",
+    title: "Tea Pakege your ideal partner for achieving your ideal partner for achieving",
     subtitle: "your ideal partner for achieving ",
     price: 30
 
@@ -65,7 +65,7 @@ const PakegeData: Data[] = [
   {
     id: 6,
     imgSrc: Img06,
-    title: "Tea Pakege",
+    title: "Tea Pakege your ideal partner for achieving your ideal partner for achieving",
     subtitle: "your ideal partner for achieving",
     price: 30
 

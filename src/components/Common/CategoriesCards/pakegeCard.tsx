@@ -39,15 +39,17 @@ function PakegeCard(itemData) {
               alt="user-image"
               width={0}
               height={0}
-              className="m-auto inline-block w-full  h-[200px] sm:h-[110px] lg:h-[200px] rounded-xl"
+              className="m-auto inline-block w-full  h-[210px] sm:h-[120px] lg:h-[220px] rounded-t-xl"
             />
           </div>
 
           <div className="pt-2 px-3">
-            <h3 className="text-sm  md:text-md  font-semibold">{title}</h3>
-            <h4 className=" text-[10px] md:text-[11px] font-normal opacity-50  lg:my-1 line-clamp-2">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, aut aliquam ad corrupti sequi pariatur.
+            <h3 className="text-sm  md:text-md  font-semibold line-clamp-2">{title}</h3>
+
+            <h4 className="hidden">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia cupiditate impedit aliquid perspiciatis labore quaerat?
             </h4>
+            
 
             <div className="flex justify-between items-center pt-2 pb-2">
               <span className="text-[12px] font-bold text-primary ">L.E {price.toFixed(2)}</span>
