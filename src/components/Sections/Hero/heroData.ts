@@ -6,7 +6,6 @@ type THeroData = {
   description?: string;
   btnTitle1?: string;
   btnTitle2?: string;
-  
 };
 
 

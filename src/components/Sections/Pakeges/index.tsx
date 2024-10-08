@@ -3,7 +3,7 @@ import React from 'react'
 import PakegesRender from './PakegesRender'
 import NewBanner from '@/components/Common/Banners/NewBanner'
 
-function Pakege() {
+function PakegeOne() {
   return (
     <>
         <section id="partners" className="py-5">
@@ -30,4 +30,4 @@ function Pakege() {
   )
 }
 
-export default Pakege
+export default PakegeOne

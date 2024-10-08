@@ -4,6 +4,8 @@ import SliderList from "../../../LogicList/MultipleSlider/SliderList";
 import CardData from "./CardData";
 import HeroCard from "../../../Common/CategoriesCards/HeroCard";
 import HeadCategory from "@/components/Common/Head-Category/HeadCategory";
+import NewList from "@/components/LogicList/NewList/NewList";
+import NewListTwo from "@/components/LogicList/NewList/NewListTwo";
 
 function HeroCardRender() {
   // translation
@@ -16,6 +18,9 @@ function HeroCardRender() {
     </div>
   );
 
+  
+
+
   return (
     <div className="">
       <HeadCategory
@@ -26,7 +31,7 @@ function HeroCardRender() {
         pathText="/offers"
       />
 
-      <SliderList records={records} renderItem={renderCategories} />
+      <NewListTwo records={records} renderItem={renderCategories} emptyMessage=""/>
     </div>
   );
 }
