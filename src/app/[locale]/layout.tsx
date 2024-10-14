@@ -37,7 +37,6 @@ export default async function RootLayout({
             <HeaderRender />
             <MobileHeader />
             <main className={`${locale === "ar" ? "__rtl_lang" : ""}`}>{children}</main>
-            
             <ScrollToTop />
             <WhatsUpLink />
             <Footer />

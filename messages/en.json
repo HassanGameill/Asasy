@@ -7,7 +7,9 @@
     "home": "Home",
     "products": "Products",
     "packages": "Packages",
-    "services": "OurService"
+    "services": "Service",
+    "B2B": "B2B",
+    "about": "About"
     
     
   },

@@ -1,9 +1,9 @@
-import Img01 from "../../../../public/images/bannar/b1.jpeg";
-import Img02 from "../../../../public/images/bannar/b2.jpeg";
-import Img03 from "../../../../public/images/bannar/b3.jpeg";
-import Img04 from "../../../../public/images/bannar/b4.jpeg";
-import Img05 from "../../../../public/images/bannar/b5.jpeg";
-import Img06 from "../../../../public/images/bannar/b6.jpeg";
+import Img01 from "../../../../public/images/packages/01.png";
+import Img02 from "../../../../public/images/packages/02.png";
+import Img03 from "../../../../public/images/packages/03.png";
+import Img04 from "../../../../public/images/packages/04.png";
+import Img05 from "../../../../public/images/packages/05.png";
+import Img06 from "../../../../public/images/packages/06.png";
 
 
 

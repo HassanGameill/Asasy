@@ -1,8 +1,7 @@
+/* eslint-disable react/jsx-no-undef */
 import Hero from "@/components/Sections/Hero";
-import Pakege from "@/components/Sections/Pakeges";
-import CategoryRender from "@/components/UI-Render/Category/CategoryRender";
+import PakegeOne from "@/components/Sections/Pakeges/PakegeOne";
 import { Metadata } from "next";
-
 
 
 export const metadata: Metadata = {
@@ -14,12 +13,16 @@ export const metadata: Metadata = {
   // other metadata
 };
 
+
+
+
+
 export default function Home() {
+  
   return (
     <>
       <Hero />
-      <Pakege />
-      
+      <PakegeOne />
       
     </>
   );
