@@ -1,7 +1,7 @@
+/* eslint-disable react/jsx-no-undef */
 import Hero from "@/components/Sections/Hero";
-import PakegeOne from "@/components/Sections/Pakeges";
+import PakegeOne from "@/components/Sections/Pakeges/PakegeOne";
 import { Metadata } from "next";
-
 
 
 export const metadata: Metadata = {
@@ -13,14 +13,16 @@ export const metadata: Metadata = {
   // other metadata
 };
 
-export default async function Home() {
-  await new Promise((resolve) => setTimeout(resolve, 2000))
 
+
+
+
+export default function Home() {
+  
   return (
     <>
       <Hero />
       <PakegeOne />
-      
       
     </>
   );

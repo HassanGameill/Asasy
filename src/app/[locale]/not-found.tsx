@@ -1,6 +1,7 @@
+"use client"
 import React from 'react'
 
-function NotFoundPage() {
+function notFound() {
   return (
     <div>
         <h1 className="">Please try Again</h1>
@@ -9,4 +10,5 @@ function NotFoundPage() {
   )
 }
 
-export default NotFoundPage
+
+export default notFound
